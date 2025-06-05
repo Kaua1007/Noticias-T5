@@ -1,0 +1,251 @@
+@charset "UTF-8"; /* Define a codificação de caracteres do CSS como UTF-8 */
+
+/* Zera as margens e os preenchimentos padrão de todos os elementos */
+* {
+  margin: 0;   /* Remove a margem externa padrão */
+  padding: 0;  /* Remove o preenchimento interno padrão */
+}
+
+/* Define o estilo geral do corpo da página */
+body {
+  background-color: #001c49cf; /* Cor de fundo azul escuro com leve transparência */
+  font-family: "Roboto Slab", sans-serif; /* Fonte serifada usada em todo o site */
+}
+
+/* Define o estilo da área principal do conteúdo */
+main {
+  background-color: white;           /* Cor de fundo branca */
+  padding: 20px;                     /* Espaçamento interno de 20px */
+  border-radius: 10px;               /* Bordas arredondadas */
+  box-shadow: 0px 0px 10px #0a0a0a99;/* Sombra ao redor do bloco */
+  min-width: 320px;                  /* Largura mínima de 320px (bom para celular) */
+  max-width: 800px;                  /* Largura máxima de 800px */
+  margin-bottom: 10px;              /* Espaço abaixo do main */
+  margin-top: 10px;                 /* Espaço acima do main */
+  margin: auto;                     /* Centraliza o main horizontalmente */
+}
+
+/* Estilo dos parágrafos dentro do main */
+main p {
+  font-size: 1.3em;        /* Tamanho da fonte ampliado */
+  margin: 15px 0px;        /* Margem acima e abaixo de 15px */
+  text-align: justify;     /* Alinhamento do texto justificado */
+  text-indent: 30px;       /* Recuo da primeira linha do parágrafo */
+  line-height: 1em;        /* Altura entre as linhas */
+}
+
+/* Estilo para elementos <strong> */
+strong {
+  font-weight: bold;      /* Deixa o texto em negrito */
+  padding: 2px 6px;       /* Espaçamento interno horizontal e vertical */
+}
+
+/* Estilo para o título principal */
+.principal {
+  text-align: center;     /* Centraliza o título */
+  font-size: 3em;         /* Aumenta bastante o tamanho da fonte */
+  padding-top: 100px;     /* Adiciona espaço acima do título */
+}
+
+/* Cabeçalho da seção de notícias com degradê */
+.noticia-header {
+  background-image: linear-gradient(to top, #0F172A, #001c49cf); /* Degradê de azul escuro para transparente */
+  padding: 20px 0;        /* Espaçamento superior e inferior */
+  text-align: center;     /* Centraliza o conteúdo */
+  padding-bottom: 10px;   /* Espaço extra na parte inferior */
+}
+
+/* Barra fixa no topo da tela */
+.topo-fixo {
+  position: fixed;          /* Fixa no topo da tela mesmo rolando */
+  top: 0;                   /* Encosta no topo */
+  left: 0;                  /* Encosta na esquerda */
+  width: 100%;              /* Ocupa toda a largura da tela */
+  background-color: #003366;/* Cor de fundo azul escuro */
+  color: white;             /* Cor do texto branca */
+  z-index: 1000;            /* Garante que fique sobre outros elementos */
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2); /* Sombra leve abaixo */
+}
+
+/* Cabeçalho dentro da barra fixa */
+.topo-fixo header {
+  padding: 10px 20px;       /* Espaço interno no topo fixo */
+}
+
+/* Navegação (menu) dentro da barra fixa */
+.topo-fixo nav {
+  padding: 10px 20px;       /* Espaçamento interno da navegação */
+  display: flex;            /* Exibe os links lado a lado */
+  gap: 15px;                /* Espaço entre os links */
+}
+
+/* Estilo dos links de navegação */
+.topo-fixo nav a {
+  color: white;             /* Cor do link branca */
+  text-decoration: none;    /* Remove o sublinhado padrão */
+  font-weight: bold;        /* Deixa o link em negrito */
+}
+
+/* Estilo do título da notícia */
+.noticia-header h2 {
+  margin: 0;                        /* Remove margem padrão */
+  font-family: 'Poppins', sans-serif;   /* Define a fonte do título */
+  font-size: 24px;                 /* Tamanho da fonte */
+  color: white;                    /* Cor do texto branca */
+  text-transform: uppercase;       /* Transforma todo o texto em maiúsculo */
+  letter-spacing: 1px;             /* Espaçamento entre letras */
+}
+
+/* Barra de navegação para voltar */
+.navbar-voltar {
+  background-color: #0F172A;         /* Fundo azul escuro */
+  padding: 10px;                     /* Espaçamento interno */
+  text-decoration: none;             /* Remove sublinhado (embora não seja um link aqui) */
+  font-size: .7em;                   /* Fonte pequena */
+  border: 0 solid;                   /* Sem bordas */
+  text-align: center;                /* Centraliza o texto */
+  border-radius: 0 0 10px 10px;      /* Arredonda somente os cantos inferiores */
+}
+
+/* Links dentro da barra de voltar */
+.navbar-voltar a {
+  color: #1D4ED8;                    /* Azul vibrante */
+  padding: 10px;                     /* Espaço ao redor do texto */
+  text-decoration: none;            /* Remove sublinhado */
+  font-family: 'Montserrat', sans-serif; /* Fonte moderna */
+  font-size: 16px;                  /* Tamanho da fonte */
+}
+
+/* Efeito hover para links na barra de voltar */
+.navbar-voltar a:hover {
+  text-decoration: underline;      /* Sublinha ao passar o mouse */
+  background-color: #1D4ED8;       /* Fundo azul mais claro */
+  color: #3B82F6;                  /* Cor do texto ainda mais clara */
+  transition-duration: .5s;        /* Suaviza a transição */
+  padding: 2px;                    /* Diminui o espaçamento no hover */
+  border-radius: 5px;              /* Arredonda os cantos */
+}
+
+/* Espaçamento especial no parágrafo com ID p01 */
+#p01 {
+  padding-top: 25px;              /* Afasta do topo (útil quando há cabeçalho fixo) */
+}
+
+/* Imagem com ID img01 */
+#img01 {
+  max-width: 100%;                /* Não ultrapassa o tamanho do container */
+  width: 300px;                   /* Largura padrão */
+  height: auto;                   /* Mantém proporção original */
+  display: block;                 /* Exibe como bloco */
+  margin: 5px auto;               /* Centraliza horizontalmente com margem vertical */
+}
+
+/* Bloco que une imagem e parágrafo lado a lado */
+.fototexto {
+  display: flex;                  /* Layout flexível para alinhamento horizontal */
+  align-items: flex-start;        /* Alinha pelo topo */
+  gap: 20px;                      /* Espaço entre imagem e texto */
+  margin: 20px 40px;              /* Margem ao redor do bloco */
+  flex-wrap: wrap;                /* Permite quebrar para baixo em telas pequenas */
+}
+
+/* Imagem dentro do bloco fototexto */
+.fototexto img {
+  max-width: 250px;               /* Largura máxima da imagem */
+  width: 100%;                    /* Responsivo até o tamanho máximo */
+  height: auto;                   /* Mantém proporção */
+}
+
+/* Parágrafo dentro do bloco fototexto */
+.fototexto p {
+  flex: 1;                        /* Ocupa o espaço restante ao lado da imagem */
+  font-size: 1.4em;               /* Fonte maior para destaque */
+  text-align: justify;           /* Justifica o texto */
+}
+
+/* Estilo geral para elementos <iframe> */
+iframe {
+  margin: auto;                   /* Centraliza o iframe */
+}
+
+/* Estilo do contêiner de vídeo responsivo */
+div.video {
+  background-color: #0F172A;      /* Fundo escuro */
+  margin: 0px -20px 30px -20px;   /* Margens para sair um pouco do main */
+  padding: 20px;                  /* Espaçamento interno */
+  padding-bottom: 58%;            /* Proporcional à largura (formato 16:9) */
+  position: relative;             /* Posição relativa para o iframe absoluto */
+}
+
+/* Estilo do iframe dentro da div de vídeo */
+div.video > iframe {
+  position: absolute;             /* Posicionamento sobreposto dentro da div */
+  top: 5%;                        /* Espaço superior */
+  left: 5%;                       /* Espaço lateral */
+  width: 90%;                     /* Largura do iframe */
+  height: 90%;                    /* Altura do iframe */
+}
+
+/* Estilo de links dentro de parágrafos */
+p > a {
+  text-decoration: none;          /* Remove sublinhado dos links */
+  color: black;                   /* Cor preta para o link */
+}
+
+/* Efeito ao passar o mouse em links de parágrafo */
+p > a:hover {
+  text-decoration: underline;     /* Sublinha o link ao passar o mouse */
+}
+
+/* Subtítulo com fonte maior */
+#sub2 {
+  font-size: 2em;                 /* Tamanho ampliado da fonte */
+}
+
+.imgMoon {
+  width: 25px;
+  background-color: inherit;
+}
+
+body.dark-mode {
+  background-color: #001c49cf;
+}
+
+body.dark-mode main {
+  background-color: #000000;
+  color: #F8FAFC;
+}
+
+body.dark-mode header {
+  background-image: linear-gradient(to top, var(--rodapé), var(--textoheader));
+}
+
+body.dark-mode nav {
+  background-color: var(--rodapé);
+}
+
+
+body.light-mode {
+  background-color: #649ffda5;
+}
+
+body.light-mode header {
+  background-image: linear-gradient(to top, var(--links), var(--fundo));
+}
+
+body.light-mode nav {
+  background-color: var(--links);
+}
+
+
+body.light-mode header > p{
+  color: var(--rodapé);
+}
+
+body.light-mode nav > a{
+  color: var(--rodapé);
+}
+
+body.light-mode header > h1{
+  color: var(--rodapé);
+}

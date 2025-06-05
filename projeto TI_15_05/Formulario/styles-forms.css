@@ -1,0 +1,149 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@100..900&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    background-color: #001c49cf;
+    font-family: "Montserrat", sans-serif;;
+}
+
+header{
+    background-image: linear-gradient(to top, #0F172A, #001c49cf);
+    color: #2061cbce;
+    text-align: center;
+    min-height: 50px;
+    padding-top: 30px;
+    font-size: 2.5vw;
+}
+
+.bianca{
+    color: #1D4ED8;
+    margin-bottom: 30px;
+    font-size: 30px;
+    font-size: 1.5em;
+}
+
+header > p {
+    color: #1D4ED8;
+    font-family: #64748B;
+    max-height: 500px;
+    margin: auto;
+}
+
+form {
+    padding-top: 30px;
+    padding-bottom: 30px;
+    border-radius: 10px;
+    padding-left: 10px;
+}
+
+fieldset {
+    background-color: #2061cbce;
+    border-radius: 10px;
+    margin: 30px;
+    border: solid 1px #0F172A;
+}
+
+legend {
+    background-color: #3B82F6;
+    border-radius: 8px;
+    border: solid 1px #0F172A;
+}
+
+h1 {
+    margin-left: 30px;
+}
+
+h2 {
+    margin-left: 30px;
+}
+
+h3 {
+    margin: 10px;
+}
+
+select {
+    width: 200px;
+}
+
+input[type="submit"], input[type="reset"] {
+    padding: 10px;
+    background-color: #3B82F6;
+    border: solid 1px #0F172A;
+    border-radius: 10px;
+    margin-left: 30px;
+    transition: .6s;
+    cursor: pointer;
+}
+
+input[type="submit"]:hover, input[type="reset"]:hover {
+    background-color: black;
+    color: lightgray;
+    transform: scale(1.05);
+}
+
+.button {
+    margin-left: 15px;
+}
+
+.coments {
+    margin-left: 15px;
+}
+
+.lastButton {
+    margin-bottom: 15px;
+}
+
+.imgMoon {
+    width: 25px;
+    background-color: inherit;
+  }
+  
+  body.dark-mode {
+    background-color: #001c49cf;
+  }
+  
+  body.dark-mode main {
+    background-color: #000000;
+    color: #F8FAFC;
+  }
+  
+  body.dark-mode header {
+    background-image: linear-gradient(to top, var(--rodapé), var(--textoheader));
+  }
+  
+  body.dark-mode nav {
+    background-color: var(--rodapé);
+  }
+  
+  
+  body.light-mode {
+    background-color: #649ffda5;
+  }
+  
+  body.light-mode header {
+    background-image: linear-gradient(to top, var(--links), var(--fundo));
+  }
+  
+  body.light-mode nav {
+    background-color: var(--links);
+  }
+  
+  body.light-mode header > p{
+    color: var(--rodapé);
+  }
+  
+  body.light-mode nav > a{
+    color: var(--rodapé);
+  }
+  
+  body.light-mode header > h1{
+    color: var(--rodapé);
+  }

@@ -1,0 +1,233 @@
+@charset "UTF-8";
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@100..900&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+:root{
+    --fundo: #F8FAFC; /* Fundo da página */
+    --textoprincipal: #2061cbce; /* Cor do texto (fácil de ler) */
+    --textoheader: #001c49cf;
+    --titulos: #1D4ED8; /* Títulos de notícias, chamadas */
+    --links: #3B82F6;/* Links, hover, botões de ação */
+    --rodapé:#0F172A;/* Fundo de navbar ou rodapé */
+    --textosegundarios:	#64748B;/* Legendas, datas, autores */
+
+    --TítuloPrincipal: "Roboto Slab", sans-serif; /* Título Principal / Manchetes */
+    --Textonotícias: font-family: "Roboto", sans-serif; /* Texto das notícias / corpo */
+    --textomorderno: font-family: "Montserrat", sans-serif; /* Menu / Navegação / Cabeçalho e Rodapé */
+}
+
+* {
+    margin: 0; /* Remove margem padrão de todos os elementos */
+    padding: 0; /* Remove preenchimento padrão */
+    font-family: var(--fonte1); /* Define a fonte padrão como a variável criada */
+    font-size: 2.5vw; /* Tamanho da fonte relativo à largura da tela (responsivo) */
+}
+
+body{
+    background-color: var(--textoheader);
+    font-family: var(--textoprincipal);
+}
+
+html, body {
+    min-height: 100vh; /* Garante que ocupem pelo menos 100% da altura da tela */
+}
+
+header{
+    background-image: linear-gradient(to top, var(--rodapé), var(--textoheader));
+    color: var(--textoprincipal);
+    text-align: center;
+    min-height: 50px;
+    padding-top: 30px;
+}
+
+header > h1{
+    color: var(--titulos);
+    font-family: var(--TítuloPrincipal);
+    margin-bottom: 30px;
+    font-size: 30px;
+    font-size: 1.5em;
+}
+
+header > p {
+    color: var(--titulos);
+    font-family: var(--textosegundarios);
+    max-height: 500px;
+    margin: auto;
+}
+
+header > button {
+    width: 80px;
+    background-color: white;
+    border-radius: 20px;
+    display: flex;
+    justify-content: center;
+    position: absolute;
+    right: 20px;
+}
+
+
+nav{
+    background-color: var(--rodapé);
+    padding: 10px;
+    text-align: center;
+    border-radius: 0 0 10px 10px;
+}
+
+nav > a{
+    padding: 10px;
+    text-decoration: none;
+    font-size: .7em;
+    text-decoration: none;
+}
+
+nav > a:hover{
+    background-color: var(--titulos);
+    color: var(--links);
+    transition-duration: .5s;
+    padding: 5px;
+    border-radius: 10px;
+}
+
+main{
+    background-color: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px #0a0a0a99;
+    min-width: 320px;
+    max-width: 800px;
+    margin-bottom: 1px;
+    margin-top: 10px;
+    margin: auto;
+
+}
+
+main p{
+    font-size: .8em;
+    margin: 15px 0px;
+    text-align: justify;
+    text-indent: 30px;
+    line-height: 1em;
+}
+
+strong{
+    font-weight: bold;
+    padding: 2px 6px;
+}
+
+#img01{
+    max-width: 100%;
+    width: 300px; /* você pode trocar esse valor */
+    height: auto;
+    display: block;
+    margin: 5px auto; /* centraliza */
+  }
+
+iframe{
+    margin: auto;
+}
+
+main h1{
+    background-image: linear-gradient(to right, var(--textoprincipal), transparent);
+    border-radius: 5px;
+    font-family: var(--TítuloPrincipal);
+    font-size: .8em;
+}
+
+main h2{
+    background-image: linear-gradient(to right, var(--textoprincipal), transparent);
+    border-radius: 5px;
+    font-family: var(--TítuloPrincipal);
+    font-size: .8em;
+}
+
+footer{
+    background-color: var(--rodapé);
+    color: var(--fundo);
+    text-align: center;
+}
+
+div.video{
+    background-color: var(--rodapé);
+    margin: 0px -20px 30px -20px;
+    padding: 20px;
+    padding-bottom: 58%;
+    position: relative;
+}
+
+div.video > iframe{
+    position: absolute;
+    top: 5%;
+    left: 5%;
+    width: 90%;
+    height: 90%;
+}
+
+.imgMoon {
+    width: 25px;
+    background-color: inherit;
+}
+
+body.dark-mode {
+    background-color: #001c49cf;
+}
+
+body.dark-mode main {
+    background-color: #000000;
+    color: #F8FAFC;
+}
+
+body.dark-mode header {
+    background-image: linear-gradient(to top, var(--rodapé), var(--textoheader));
+}
+
+body.dark-mode nav {
+    background-color: var(--rodapé);
+    color: #1D4ED8;
+}
+
+body.dark-mode nav > a{
+    text-decoration: none;
+    color: #1D4ED8;
+}
+
+body.light-mode {
+    background-color: #649ffda5;
+}
+
+body.light-mode header {
+    background-image: linear-gradient(to top, var(--links), var(--fundo));
+}
+
+body.light-mode nav {
+    background-color: var(--links);
+}
+
+
+body.light-mode header > p{
+    color: var(--rodapé);
+}
+
+body.light-mode nav > a{
+    color: var(--rodapé);
+}
+
+body.light-mode header > h1{
+    color: var(--rodapé);
+}
+
+body.light-mode nav > .Rodape{
+    color: white;
+}
+
+body.dark-mode nav > .Rodape{
+    color: white;
+}
+
+.Rodape {
+    margin-top: 8px;
+    padding: 10px 0 10px 0;
+}
